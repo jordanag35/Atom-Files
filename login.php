@@ -70,9 +70,9 @@ button {
 
 
 
-            Forgot <a href="#"> password? </a>
+            
 
-             New User? <a href="#"> Sign Up </a>
+             New User? <a href="signup.php"> Sign Up </a>
              </form>
   </div>
 </div>
