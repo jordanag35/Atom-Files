@@ -4,6 +4,28 @@ session_start();
     include("connection.php");
     include("functions.php");
 
+
+    if($_SERVER['REQUEST_METHOD'] == "POST")
+    {
+
+        //Somethin was posted
+      $username =  $_POST['username'];
+      $password =  $_POST['password'];
+
+      if(!empty($username) && !empty($password) && !is_numeric($username))
+      {
+
+          //save to database
+          $user_id = random_num(20);
+          $query = "insert into users (user_id,user_email,password) values ('$user_id','$user_email','$password')";
+
+
+      }else
+      {
+          echo "Please enter some valid information!";
+      }
+
+    }
  ?>
  <!DOCTYPE html>
  <html>
@@ -58,7 +80,7 @@ session_start();
          <div class="container">
            <form action="index.php">
              <input type="text" placeholder="Email" name="username">
-             <input type="text" placeholder="Password" name="psw">
+             <input type="text" placeholder="Password" name="password">
              <button type="submit">Sign Up</button>
 
 
