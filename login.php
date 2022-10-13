@@ -125,12 +125,4 @@ button {
 
 
 
-             New User? <a href="signup.php"> Sign Up </a>
-             </form>
-  </div>
-</div>
-
-</body>
-</html>
-
-</html>
+   
