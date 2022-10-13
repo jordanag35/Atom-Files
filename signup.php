@@ -18,7 +18,10 @@ session_start();
           //save to database
           $user_id = random_num(20);
           $query = "insert into users (user_id,user_email,password) values ('$user_id','$user_email','$password')";
+          mysqli_query($query);
 
+          header("Location: login.php");
+          die;
 
       }else
       {
