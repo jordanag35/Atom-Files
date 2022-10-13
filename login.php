@@ -1,89 +1,47 @@
 <?php
-session_start();
 
-  $_SESSION;
+function check_login($con)
+{
 
-  include("connection.php");
-  include("functions.php");
+  if(isset($_SESSION['user_id']))
+  {
 
-<<<<<<< Updated upstream
-	
-=======
-	//$user_data = check_login($con);
->>>>>>> Stashed changes
+    $id = $_SESSION['user_id'];
+    $query = "select * from users where user_id = '$id' limit 1";
 
-?>
+    $result = mysqli_query($con,$query);
+    if($result && mysqli_num_rows($result) > 0)
+    {
 
-<!DOCTYPE html>
-<html>
-  <html>
-<head>
+      $user_data = mysqli_fetch_assoc($result);
+      return $user_data;
 
-<title> Login Page </title>
+    }
 
-<style>
-Body {
-  font-family: Calibri, Helvetica, sans-serif;
-  color: white;
-  background-color: black;
+  }
+
+  //redirect to login
+  header("location: login.php");
+  die;
 }
-button {
-       background-color: black;
-       width: 100%;
-        color: white;
-        padding: 15px;
-        margin: 10px 0px;
-        border: none;
-        cursor: pointer;
-         }
- form {
-        border: 3px solid #f1f1f1;
-    }
- input[type=text], input[type=password] {
-        width: 100%;
-        margin: 8px 0;
-        padding: 12px 20px;
-        display: inline-block;
-        border: 2px solid black;
-        box-sizing: border-box;
-    }
- button:hover {
-        opacity: 0.7;
-    }
-  .cancelbtn {
-        width: auto;
-        padding: 10px 18px;
-        margin: 10px 5px;
+
+function random_num($length)
+{
+
+    $text = "";
+    if($length < 5)
+    {
+        $length = 5;
     }
 
+    $len = rand(4,$length);
 
- .container {
-        padding: 25px;
-        background-color: gray;
+    for ($i=0; $i < $len; $i++)
+     {
+
+      $text .= rand(0,9);
     }
-</style>
-</head>
-<body>
-    <center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="125" height="125"></center>
-    <form>
-        <div class="container">
-          <center><font size="+2">Login</font></center>
-		  <br>
-          <form action="index.php">
-            <input type="text" placeholder="Email" name="username">
-            <input type="text" placeholder="Password" name="psw">
-            <button type="submit">Login</button>
 
+    return $text;
 
-
-
-
-             New User? <a href="signup.php"> Sign Up </a>
-             </form>
-  </div>
-</div>
-
-</body>
-</html>
-
-</html>
+}
