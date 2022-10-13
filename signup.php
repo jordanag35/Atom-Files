@@ -21,7 +21,7 @@ session_start();
 
           mysqli_query($con, $query);
 
-          header("location: login.php");
+          header("Location: login.php");
           die;
 
       }else
@@ -80,9 +80,9 @@ session_start();
  </head>
  <body>
      <center> <img src="Afterhours.png" alt="boy" class="w3-image" width="125" height="125"></center>
-     <form>
+
          <div class="container">
-           <form action="index.php">
+           <form method="post">
              <input type="text" placeholder="Email" name="user_name"><br><br>
              <input type="text" placeholder="Password" name="password"><br><br>
 
@@ -95,9 +95,6 @@ session_start();
               ALready have an account? <a href="login.php"> Login </a>
               </form>
    </div>
- </div>
 
  </body>
- </html>
-
  </html>
