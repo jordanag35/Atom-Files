@@ -1,21 +1,62 @@
 <?php
 session_start();
 
-  $_SESSION;
+    include("connection.php");
+    include("functions.php");
 
-  include("connection.php");
-  include("functions.php");
 
-	
+    if($_SERVER['REQUEST_METHOD'] == "POST")
+    {
+
+        //Somethin was posted
+      $user_name =  $_POST['user_name'];
+      $password =  $_POST['password'];
+
+      if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+      {
+
+          //read to database
+
+          $query = "select * from users where user_name = '$user_name' limit 1 ";
+
+          $result = mysqli_query($con, $query);
+
+          if($result)
+          {
+            if($result && mysqli_num_rows($result) > 0)
+            {
+
+              $user_data = mysqli_fetch_assoc($result);
+
+              if($user_data['password'] === $password)
+              {
+                $_SESSION['user_id'] = $user_data['user_id'];
+                header("Location: index.php");
+                die;
+
+              }
+
+            }
+
+          }
+
+            echo "wrong username or password!";
+
+      }else
+      {
+          echo "wrong username or password";
+      }
+
+    }
+
+
 
 ?>
 
 <!DOCTYPE html>
 <html>
-  <html>
 <head>
-<
-<title> Login Page </title>
+   <title>Signup</title>
 
 <style>
 Body {
@@ -61,12 +102,24 @@ button {
 </head>
 <body>
     <center> <img src="Afterhours.png" alt="boy" class="w3-image" width="125" height="125"></center>
-    <form>
+
         <div class="container">
-          <form action="index.php">
-            <input type="text" placeholder="Email" name="username">
-            <input type="text" placeholder="Password" name="psw">
-            <button type="submit">Login</button>
+          <form method="post">
+            <input type="text" placeholder="Email" name="user_name"><br><br>
+            <input type="text" placeholder="Password" name="password"><br><br>
+
+            <input id="Button" type="submit" value="Login"><br><br>
+
+
+
+
+
+             New User? <a href="login.php"> Sign Up </a>
+             </form>
+  </div>
+
+</body>
+</html>
 
 
 
