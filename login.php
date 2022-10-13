@@ -6,7 +6,7 @@ session_start();
   include("connection.php");
   include("functions.php");
 
-	$user_data = check_login($con);
+	
 
 ?>
 
@@ -70,7 +70,7 @@ button {
 
 
 
-            
+
 
              New User? <a href="signup.php"> Sign Up </a>
              </form>

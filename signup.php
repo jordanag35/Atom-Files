@@ -9,18 +9,19 @@ session_start();
     {
 
         //Somethin was posted
-      $username =  $_POST['username'];
+      $user_name =  $_POST['user_name'];
       $password =  $_POST['password'];
 
-      if(!empty($username) && !empty($password) && !is_numeric($username))
+      if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
       {
 
           //save to database
           $user_id = random_num(20);
-          $query = "insert into users (user_id,user_email,password) values ('$user_id','$user_email','$password')";
-          mysqli_query($query);
+          $query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$password')";
 
-          header("Location: login.php");
+          mysqli_query($con, $query);
+
+          header("location: login.php");
           die;
 
       }else
@@ -82,9 +83,10 @@ session_start();
      <form>
          <div class="container">
            <form action="index.php">
-             <input type="text" placeholder="Email" name="username">
-             <input type="text" placeholder="Password" name="password">
-             <button type="submit">Sign Up</button>
+             <input type="text" placeholder="Email" name="user_name"><br><br>
+             <input type="text" placeholder="Password" name="password"><br><br>
+
+             <input id="Button" type="submit" value="Sign Up"><br><br>
 
 
 
