@@ -6,11 +6,11 @@ session_start();
   include("connection.php");
   include("functions.php");
 
-
-
-
+<<<<<<< Updated upstream
+	
+=======
 	//$user_data = check_login($con);
-
+>>>>>>> Stashed changes
 
 ?>
 
