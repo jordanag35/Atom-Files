@@ -6,7 +6,11 @@ session_start();
   include("connection.php");
   include("functions.php");
 
+<<<<<<< Updated upstream
 	
+=======
+	//$user_data = check_login($con);
+>>>>>>> Stashed changes
 
 ?>
 
@@ -14,7 +18,7 @@ session_start();
 <html>
   <html>
 <head>
-<
+
 <title> Login Page </title>
 
 <style>
@@ -60,9 +64,11 @@ button {
 </style>
 </head>
 <body>
-    <center> <img src="Afterhours.png" alt="boy" class="w3-image" width="125" height="125"></center>
+    <center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="125" height="125"></center>
     <form>
         <div class="container">
+          <center><font size="+2">Login</font></center>
+		  <br>
           <form action="index.php">
             <input type="text" placeholder="Email" name="username">
             <input type="text" placeholder="Password" name="psw">
