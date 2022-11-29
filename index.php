@@ -13,6 +13,7 @@ session_start();
 <html>
 <head>
 <title>After Hours</title>
+<link rel="icon" type="image/x-icon" href="Afterhours.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -75,7 +76,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <div>
           <select name="" id="">
               <option value="Everything">Everything</option>
-              <option value="Titles">Titles</option>
+              <option value="Titles">Class Title</option>
               <option value="Descriptions">Descriptions</option>
           </select>
           <input type="text" name="q" placeholder="search ...">
