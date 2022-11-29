@@ -87,188 +87,27 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="container">
   <div class="subforum">
       <div class="subforum-title">
-          <h1>My Classes</h1>
+          <h1>UM-Dearbon Classes</h1>
       </div>
       <div class="subforum-row">
           <div class="subforum-icon subforum-column center">
               <i class="fa fa-car center"></i>
           </div>
           <div class="subforum-description subforum-column">
-              <h4><a href="#">Description Title</a></h4>
-              <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+              <h4><a href="#">CIS 435</a></h4>
+              <p>Web Technology</p>
+              <p>Section: 001</p>
           </div>
           <div class="subforum-stats subforum-column center">
-              <span>24 Posts | 12 Topics</span>
+              <span>24 Posts</span>
           </div>
           <div class="subforum-info subforum-column">
-              <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
-              <br>on <small>12 Dec 2020</small>
-          </div>
-      </div>
-  </div>
-  <!--More-->
-
-  <div class="subforum">
-      <div class="subforum-title">
-          <h1>General Information</h1>
-      </div>
-      <div class="subforum-row">
-          <div class="subforum-icon subforum-column center">
-              <i class="fa fa-car center"></i>
-          </div>
-          <div class="subforum-description subforum-column">
-              <h4><a href="#">Description Title</a></h4>
-              <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-          </div>
-          <div class="subforum-stats subforum-column center">
-              <span>24 Posts | 12 Topics</span>
-          </div>
-          <div class="subforum-info subforum-column">
-              <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
-              <br>on <small>12 Dec 2020</small>
-          </div>
-      </div>
-      <hr class="subforum-devider">
-      <div class="subforum-row">
-          <div class="subforum-icon subforum-column center">
-              <i class="fa fa-car center"></i>
-          </div>
-          <div class="subforum-description subforum-column">
-              <h4><a href="#">Description Title</a></h4>
-              <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-          </div>
-          <div class="subforum-stats subforum-column center">
-              <span>24 Posts | 12 Topics</span>
-          </div>
-          <div class="subforum-info subforum-column">
-              <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
-              <br>on <small>12 Dec 2020</small>
-          </div>
-      </div>
-      <hr class="subforum-devider">
-      <div class="subforum-row">
-          <div class="subforum-icon subforum-column center">
-              <i class="fa fa-car center"></i>
-          </div>
-          <div class="subforum-description subforum-column">
-              <h4><a href="#">Description Title</a></h4>
-              <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-          </div>
-          <div class="subforum-stats subforum-column center">
-              <span>24 Posts | 12 Topics</span>
-          </div>
-          <div class="subforum-info subforum-column">
-              <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
-              <br>on <small>12 Dec 2020</small>
-          </div>
-      </div>
-      <hr class="subforum-devider">
-      <div class="subforum-row">
-          <div class="subforum-icon subforum-column center">
-              <i class="fa fa-car center"></i>
-          </div>
-          <div class="subforum-description subforum-column">
-              <h4><a href="#">Description Title</a></h4>
-              <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-          </div>
-          <div class="subforum-stats subforum-column center">
-              <span>24 Posts | 12 Topics</span>
-          </div>
-          <div class="subforum-info subforum-column">
-              <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
-              <br>on <small>12 Dec 2020</small>
-          </div>
-      </div>
-      <hr class="subforum-devider">
-      <div class="subforum-row">
-          <div class="subforum-icon subforum-column center">
-              <i class="fa fa-car center"></i>
-          </div>
-          <div class="subforum-description subforum-column">
-              <h4><a href="#">Description Title</a></h4>
-              <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-          </div>
-          <div class="subforum-stats subforum-column center">
-              <span>24 Posts | 12 Topics</span>
-          </div>
-          <div class="subforum-info subforum-column">
-              <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
+              <b><a href="">Professor</a></b> by <a href="">JustAUser</a>
               <br>on <small>12 Dec 2020</small>
           </div>
       </div>
   </div>
 
-  <div class="subforum">
-      <div class="subforum-title">
-          <h1>General Information</h1>
-      </div>
-      <div class="subforum-row">
-          <div class="subforum-icon subforum-column center">
-              <i class="fa fa-car center"></i>
-          </div>
-          <div class="subforum-description subforum-column">
-              <h4><a href="#">Description Title</a></h4>
-              <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-          </div>
-          <div class="subforum-stats subforum-column center">
-              <span>24 Posts | 12 Topics</span>
-          </div>
-          <div class="subforum-info subforum-column">
-              <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
-              <br>on <small>12 Dec 2020</small>
-          </div>
-      </div>
-      <hr class="subforum-devider">
-      <div class="subforum-row">
-          <div class="subforum-icon subforum-column center">
-              <i class="fa fa-car center"></i>
-          </div>
-          <div class="subforum-description subforum-column">
-              <h4><a href="#">Description Title</a></h4>
-              <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-          </div>
-          <div class="subforum-stats subforum-column center">
-              <span>24 Posts | 12 Topics</span>
-          </div>
-          <div class="subforum-info subforum-column">
-              <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
-              <br>on <small>12 Dec 2020</small>
-          </div>
-      </div>
-      <hr class="subforum-devider">
-      <div class="subforum-row">
-          <div class="subforum-icon subforum-column center">
-              <i class="fa fa-car center"></i>
-          </div>
-          <div class="subforum-description subforum-column">
-              <h4><a href="#">Description Title</a></h4>
-              <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-          </div>
-          <div class="subforum-stats subforum-column center">
-              <span>24 Posts | 12 Topics</span>
-          </div>
-          <div class="subforum-info subforum-column">
-              <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
-              <br>on <small>12 Dec 2020</small>
-          </div>
-      </div>
-      <hr class="subforum-devider">
-      <div class="subforum-row">
-          <div class="subforum-icon subforum-column center">
-              <i class="fa fa-car center"></i>
-          </div>
-          <div class="subforum-description subforum-column">
-              <h4><a href="#">Description Title</a></h4>
-              <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-          </div>
-          <div class="subforum-stats subforum-column center">
-              <span>24 Posts | 12 Topics</span>
-          </div>
-          <div class="subforum-info subforum-column">
-              <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
-              <br>on <small>12 Dec 2020</small>
-          </div>
-      </div>
 
 
   </div>
