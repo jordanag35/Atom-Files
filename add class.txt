@@ -1,0 +1,6 @@
+//Addclass funtionality
+<div class="container">
+  <a href="AddClass.php">
+    <h3>Click below to add a class</h3>
+    <button>Add Class</button>
+   </a>
