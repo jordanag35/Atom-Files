@@ -173,7 +173,7 @@ header{
 }
 
 .bar-icon{
-    font-size: 60px;
+    font-size: 0px;
     display: inline-block;
     margin-right:10px;
     color: #fff;
@@ -222,7 +222,7 @@ header{
   /* Search Box styles */
 .search-box{
     border: solid 1px #ffcb05;
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 40px;
     display:flex;
     justify-content: center;
@@ -283,10 +283,13 @@ footer{
 
 /* posts table's head  */
 .table-head{
+
+  margin-left: 120px;
     display: flex;
 }
 
 .table-head div{
+
     padding: 5px;
     margin: 2px;
     background-color: #2C2C2C;
@@ -312,10 +315,12 @@ footer{
 /* posts table's body  */
 
 .table-row{
+  margin-left: 120px;
     display: flex;
 }
 
 .table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply{
+
     padding: 5px;
     margin: 2px;
     background-color: #131415;
@@ -341,6 +346,7 @@ footer{
 
 /* navigation path*/
 .navigate{
+  margin-left: 120px;
     margin-block: 20px;
     font-weight: lighter;
     font-size: 24px;
@@ -358,6 +364,7 @@ footer{
 /* Pagination*/
 
 .pagination{
+  margin-left: 120px;
     padding: 20px;
     font-size: 15px;
 }
