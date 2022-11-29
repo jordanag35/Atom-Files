@@ -92,7 +92,7 @@ session_start();
 
 
 
-              ALready have an account? <a href="login.php"> Login </a>
+              Already have an account? <a href="login.php"> Login </a>
               </form>
    </div>
 
