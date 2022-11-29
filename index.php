@@ -77,7 +77,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <select name="" id="">
               <option value="Everything">Everything</option>
               <option value="Titles">Class Title</option>
-              <option value="Descriptions">Descriptions</option>
+              <option value="Descriptions">Teacher</option>
           </select>
           <input type="text" name="q" placeholder="search ...">
           <button><i class="fa fa-search"></i></button>
