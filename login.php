@@ -101,7 +101,7 @@ button {
 </style>
 </head>
 <body>
-    <center> <img src="Afterhours.png" alt="boy" class="w3-image" width="125" height="125"></center>
+    <center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="125" height="125"></center>
 
         <div class="container">
           <form method="post">
