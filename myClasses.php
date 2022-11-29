@@ -92,7 +92,7 @@ $statement->closeCursor();
 
            <!--Navigation-->
            <div class="navigate">
-               <span><a href="">My Classes</a></span>
+               <span>My Classes</span>
            </div>
            <!--Display posts table-->
            <div class="posts-table">
@@ -106,10 +106,10 @@ $statement->closeCursor();
                    <div class="status"><i class="fa fa-check"></i></div>
                    <div class="subjects">
                        <a href="">CIS 435</a>
-                       <p>Web Technology
-                       Section: 001</p>
+                       <p>Web Technology</P>
+                       <p>Section: 001</p>
                        <br>
-                       <span>Started by <b><a href="">User</a></b> .</span>
+                       <span>Started by <b><a href="">TA Name</a></b> .</span>
                    </div>
                    <div class="replies">
                        2 replies <br> 125 views
