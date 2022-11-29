@@ -221,12 +221,11 @@ header{
 
   /* Search Box styles */
 .search-box{
-    border: solid 1px #52057b;
+    border: solid 1px #ffcb05;
     margin-top: 20px;
     padding: 40px;
     display:flex;
     justify-content: center;
-    box-shadow:1px 2px 3px #52057b;
 }
 
 .search-box select{
@@ -453,3 +452,5 @@ footer{
 .comment-area input:hover{
     border: solid 1px #000000;
 }
+
+/*hi*/
