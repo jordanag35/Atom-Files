@@ -66,66 +66,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 
 <!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="992" height="950">
-  </header>
-
-  <div class="search-box">
-      <div>
-          <select name="" id="">
-              <option value="Everything">Everything</option>
-              <option value="Titles">Class Title</option>
-              <option value="Descriptions">Descriptions</option>
-          </select>
-          <input type="text" name="q" placeholder="search ...">
-          <button><i class="fa fa-search"></i></button>
-      </div>
-  </div>
-  </header>
-  <div class="container">
-  <div class="subforum">
-      <div class="subforum-title">
-          <h1>UM-Dearbon Classes</h1>
-      </div>
-      <div class="subforum-row">
-          <div class="subforum-icon subforum-column center">
-              <button><i class="fa fa-check center"></i></button>
-          </div>
-          <div class="subforum-description subforum-column">
-              <h4><a href="#">CIS 435</a></h4>
-              <p>Web Technology</p>
-              <p>Section: 001</p>
-          </div>
-          <div class="subforum-stats subforum-column center">
-              <span>24 Posts</span>
-          </div>
-          <div class="subforum-info subforum-column">
-              <b><a href="">Professor</a></b> by <a href="">Teacher Name</a>
-          </div>
-      </div>
-  </div>
-
-
-
-  </div>
-  <!---->
-  </div>
-
- <!-- Forum Info
-  <div class="forum-info">
-  <div class="chart">
-      MyForum - Stats &nbsp;<i class="fa fa-bar-chart"></i>
-  </div>
-  <span><u>5,369</u> Posts in <u>48</u> Topics by <u>8,124</u> Members.</span><br>
-  <span>Latest post: <b><a href="">Random post</a></b> on Dec 15 2021 By <a href="">RandomUser</a></span>.<br>
-  <span>Check <a href="">the latest posts</a> .</span><br>
-  </div>
-
-  -->
-  </body>
-  </html>
 
 
 <!-- END PAGE CONTENT -->
