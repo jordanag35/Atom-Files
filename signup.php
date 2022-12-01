@@ -38,6 +38,8 @@ session_start();
 
  <style>
  Body {
+   margin-left: 500px;
+   margin-right: 500px;
    font-family: Calibri, Helvetica, sans-serif;
    color: white;
    background-color: black;
@@ -92,10 +94,9 @@ session_start();
 
 
 
-              Already have an account? <a href="login.php"> Login </a>
+              ALready have an account? <a href="login.php"> Login </a>
               </form>
    </div>
 
  </body>
  </html>
- //just adding for a push

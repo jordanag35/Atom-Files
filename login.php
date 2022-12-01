@@ -60,6 +60,8 @@ session_start();
 
 <style>
 Body {
+  margin-left: 500px;
+  margin-right: 500px;
   font-family: Calibri, Helvetica, sans-serif;
   color: white;
   background-color: black;
@@ -114,11 +116,9 @@ button {
 
 
 
-             New User? <a href="login.php"> Sign Up </a>
+             New User? <a href="signup.php"> Sign Up </a>
              </form>
   </div>
 
 </body>
 </html>
-
-//just adding for a push
