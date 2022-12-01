@@ -1,8 +1,8 @@
 <?php
 
-session_start();
+//session_start();
 
-include("connections.php");
+/*include("connections.php");
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
@@ -32,7 +32,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
       echo "Please enter some valid information!";
   }
 
-}
+}*/
 
 ?>
 <!DOCTYPE html>
