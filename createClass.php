@@ -2,16 +2,37 @@
 
 session_start();
 
+include("connections1.php");
+
+if($_SERVER['REQUEST_METHOD'] == "POST")
+{
+
+    //Somethin was posted
+  $title =  $_POST['title'];
+  $crn =  $_POST['crn'];
+  $section = $_POST['section'];
+  $course_number = $_POST['course_number'];
+  $professor = $_POST['professor'];
+  $forum_description = $_POST['forum_description'];
 
 
+  if(!empty($title) && !empty($crn) && !empty($section) && !empty($course_number) && !empty($professor) && !empty($forum_description) && !is_numeric($crn) && !is_numeric($section))
+  {
 
+      //save to database
+      $query = "insert into classes (crn, section, course_number, title, professor, forum_description) values (''$crn', '$section', '$course_number', '$title', '$professor', '$forum_description')";
 
+      mysqli_query($con, $query);
 
+      header("Location: forums.php");
+      die;
 
+  }else
+  {
+      echo "Please enter some valid information!";
+  }
 
-
-
-
+}
 
 ?>
 <!DOCTYPE html>
@@ -39,6 +60,8 @@ session_start();
    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
    </style>
    </head>
+
+
    <body class="w3-black">
 
    <!-- Icon Bar (Sidebar - hidden on small screens) -->
@@ -68,9 +91,13 @@ session_start();
        <a href="Myclasses.php" class="w3-bar-item w3-button" style="width:25% !important">My Classes</a>
        <a href= "Messages.php"class="w3-bar-item w3-button" style="width:25% !important">Messages</a>
        <a href= "createClass.php"class="w3-bar-item w3-button" style="width:25% !important">Messages</a>
+
      </div>
    </div>
+
+
 <style>
+
 Body {
 
   font-family: Calibri, Helvetica, sans-serif;
@@ -118,11 +145,13 @@ button {
 
 
  .container {
+   margin-top: -20px;
    margin-left: 500px;
    margin-right: 500px;
         padding: 25px;
         background-color: gray;
     }
+
 </style>
 </head>
 <body>
@@ -131,18 +160,16 @@ button {
         <div class="container">
           <form method="post">
             <input type="text" placeholder="Class Name" name="title"><br><br>
-            <input type="text" placeholder="crn number" name="crn"><br><br>
-            <input type="text" placeholder="section number" name="section"><br><br>
+            <input type="text" placeholder="CRN Number" name="crn"><br><br>
+            <input type="text" placeholder="Section Number" name="section"><br><br>
+            <input type="text" placeholder="Course Number " name="course_number"><br><br>
+            <input type="text" placeholder="Professor " name="professor"><br><br>
             <textarea id="text" name"forum_description" placeholder="Give breif description of the class..." style="height:200px"></textarea>
 
 
             <input id="Button" type="submit" value="Create"><br><br>
 
 
-
-
-
-             New User? <a href="login.php"> Sign Up </a>
              </form>
   </div>
 
