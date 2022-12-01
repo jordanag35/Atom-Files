@@ -7,6 +7,11 @@ session_start();
   //include("functions.php");
 
   //$user_data = check_login($con);
+
+
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -22,9 +27,20 @@ session_start();
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
-<title>Button</title>
+
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif, Calibri, Helvetica}
+
+button {
+    font-family: Calibri, Helvetica, sans-serif;
+       background-color: black;
+       width: 100%;
+        color: white;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+         }
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
@@ -36,6 +52,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </head>
 <body class="w3-black">
 
+
+
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
@@ -44,14 +62,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <button class="fa fa-home w3-xxlarge"></button>
     <p>HOME</p>
   </a>
-  <a href="myclasses.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="Myclasses.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <button class="fa fa-user w3-xxlarge"></button>
     <p>MY CLASSES</p>
   </a>
 </div>
-  <a href="Messages.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <button class="fa fa-envelope w3-xxlarge"></button>
-    <p>MESSAGES</p>
+  <a href="createClass.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <button class="fa fa-plus w3-xxlarge"></button>
+    <p>Create Class</p>
   </a>
 </div>
 </nav>
@@ -62,8 +80,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="Myclasses.php" class="w3-bar-item w3-button" style="width:25% !important">My Classes</a>
     <a href= "Messages.php"class="w3-bar-item w3-button" style="width:25% !important">Messages</a>
+    <a href= "createClass.php"class="w3-bar-item w3-button" style="width:25% !important">Messages</a>
   </div>
 </div>
+
 
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
@@ -77,7 +97,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <select name="" id="">
               <option value="Everything">Everything</option>
               <option value="Titles">Class Title</option>
-              <option value="Descriptions">Teacher</option>
+              <option value="Descriptions">Descriptions</option>
           </select>
           <input type="text" name="q" placeholder="search ...">
           <button><i class="fa fa-search"></i></button>
@@ -99,10 +119,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
               <p>Section: 001</p>
           </div>
           <div class="subforum-stats subforum-column center">
-              <span>
-              <p>25</p>
-              <p>subscribers<p/>
-              </span>
+              <span>24 Posts</span>
           </div>
           <div class="subforum-info subforum-column">
               <b><a href="">Professor</a></b> by <a href="">Teacher Name</a>
