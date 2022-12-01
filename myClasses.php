@@ -35,7 +35,6 @@ $statement->closeCursor();
  <!DOCTYPE html>
  <html>
  <head>
- <title>After Hours</title>
  <link rel="icon" type="image/x-icon" href="Afterhours.png">
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,9 +44,17 @@ $statement->closeCursor();
  <link rel="stylesheet" href="style.css">
  <link rel="preconnect" href="https://fonts.gstatic.com">
  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
- <title>Button</title>
  <style>
  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+ button {
+        background-color: black;
+        width: 100%;
+         color: white;
+         padding: 15px;
+         margin: 10px 0px;
+         border: none;
+         cursor: pointer;
+          }
  .w3-row-padding img {margin-bottom: 12px;}
  /* Set the width of the sidebar to 120px */
  .w3-sidebar {width: 120px;background: #222;margin-top: 0px;}
@@ -67,14 +74,14 @@ $statement->closeCursor();
      <button class="fa fa-home w3-xxlarge"></button>
      <p>HOME</p>
    </a>
-   <a href="myClasses.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+   <a href="Myclasses.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
      <button class="fa fa-user w3-xxlarge"></button>
      <p>MY CLASSES</p>
    </a>
  </div>
    <a href="createClass.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-     <button class="fa fa-envelope w3-xxlarge"></button>
-     <p>MESSAGES</p>
+     <button class="fa fa-plus w3-xxlarge"></button>
+     <p>Create Class</p>
    </a>
  </div>
  </nav>
@@ -83,10 +90,8 @@ $statement->closeCursor();
  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-     <a href="index.php" class="w3-bar-item w3-button" style="width:25% !important">My Classes</a>
-     <a href= "myClasses.php"class="w3-bar-item w3-button" style="width:25% !important">Messages</a>
-     <a href= "createClass.php"class="w3-bar-item w3-button" style="width:25% !important">Messages</a>
-
+     <a href="myClasses.html" class="w3-bar-item w3-button" style="width:25% !important">My Classes</a>
+     <a href= "Messages.html"class="w3-bar-item w3-button" style="width:25% !important">Messages</a>
    </div>
  </div>
 
@@ -94,7 +99,7 @@ $statement->closeCursor();
 
            <!--Navigation-->
            <div class="navigate">
-               <span>My Classes</span>
+               <span><a href="">My Classes</a></span>
            </div>
            <!--Display posts table-->
            <div class="posts-table">
@@ -108,10 +113,10 @@ $statement->closeCursor();
                    <div class="status"><i class="fa fa-check"></i></div>
                    <div class="subjects">
                        <a href="">CIS 435</a>
-                       <p>Web Technology</P>
-                       <p>Section: 001</p>
+                       <p>Web Technology
+                       Section: 001</p>
                        <br>
-                       <span>Started by <b><a href="">TA Name</a></b> .</span>
+                       <span>Started by <b><a href="">User</a></b> .</span>
                    </div>
                    <div class="replies">
                        2 replies <br> 125 views
