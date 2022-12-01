@@ -44,7 +44,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <button class="fa fa-home w3-xxlarge"></button>
     <p>HOME</p>
   </a>
-  <a href="Myclasses.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="myclasses.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <button class="fa fa-user w3-xxlarge"></button>
     <p>MY CLASSES</p>
   </a>
