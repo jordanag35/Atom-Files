@@ -67,12 +67,12 @@ $statement->closeCursor();
      <button class="fa fa-home w3-xxlarge"></button>
      <p>HOME</p>
    </a>
-   <a href="Myclasses.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+   <a href="myClasses.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
      <button class="fa fa-user w3-xxlarge"></button>
      <p>MY CLASSES</p>
    </a>
  </div>
-   <a href="Messages.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+   <a href="createClass.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
      <button class="fa fa-envelope w3-xxlarge"></button>
      <p>MESSAGES</p>
    </a>
