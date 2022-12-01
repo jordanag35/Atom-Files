@@ -99,7 +99,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
               <p>Section: 001</p>
           </div>
           <div class="subforum-stats subforum-column center">
-              <span>24 Posts</span>
+              <span>
+              <p>25</p>
+              <p>subscribers<p/>
+              </span>
           </div>
           <div class="subforum-info subforum-column">
               <b><a href="">Professor</a></b> by <a href="">Teacher Name</a>
