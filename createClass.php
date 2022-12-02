@@ -12,26 +12,27 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   $section = $_POST['section'];
   $course_number = $_POST['course_number'];
   $professor = $_POST['professor'];
-  $forum_description = $_POST['forum_description'];
+  //$forum_description = $_POST['forum_description'];
 
 
-  if(!empty($title) && !empty($crn) && !empty($section) && !empty($course_number) && !empty($professor) && !empty($forum_description) && !is_numeric($crn) && !is_numeric($section))
-  {
+  //if(!empty($title) && !empty($crn) && !empty($section) && !empty($course_number) && !empty($professor) && !is_numeric($crn) && !is_numeric($section))
+  //{
 
       //save to database
-      $query = "insert into classes (crn, section, course_number, title, professor, forum_description) values (''$crn', '$section', '$course_number', '$title', '$professor', '$forum_description')";
+      $query = "insert into classes (crn,section,course_number,title,professor) values ('$crn','$section','$course_number','$title','$professor')";
 
       mysqli_query($con, $query);
 
       header("Location: forums.php");
       die;
 
-  }else
-  {
-      echo "Please enter some valid information!";
-  }
+  //}else
+  //{
+  //    echo "Please enter some valid information!";
+  //}
 
 }
+
 
 ?>
 <!DOCTYPE html>
