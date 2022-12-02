@@ -1,7 +1,7 @@
 <?php
 
 //session_start();
-/*include("connections1.php");
+include("connection.php");
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
@@ -32,7 +32,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   }
 
 }
-*/
+
 ?>
 <!DOCTYPE html>
 <html>
