@@ -99,7 +99,7 @@ $statement->closeCursor();
 
            <!--Navigation-->
            <div class="navigate">
-               <span><a href="">My Classes</a></span>
+               <span>My Classes</span>
            </div>
            <!--Display posts table-->
            <div class="posts-table">
