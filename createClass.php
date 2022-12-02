@@ -49,7 +49,19 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
 
    <style>
-   body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+   body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif, Calibri, Helvetica}
+
+   button {
+       font-family: Calibri, Helvetica, sans-serif;
+          background-color: black;
+          width: 100%;
+           color: white;
+           padding: 15px;
+           margin: 10px 0px;
+           border: none;
+           cursor: pointer;
+          }
+
    .w3-row-padding img {margin-bottom: 12px}
    /* Set the width of the sidebar to 120px */
    .w3-sidebar {width: 120px;background: #222;}
@@ -78,7 +90,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
    </div>
      <a href="createClass.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
        <button class="fa fa-plus w3-xxlarge"></button>
-       <p>Create Class</p>
+       <p>CREATE CLASS</p>
      </a>
    </div>
    </nav>
@@ -103,7 +115,7 @@ Body {
   color: white;
   background-color: black;
 }
-button {
+.button1 {
        background-color: black;
        width: 100%;
         color: white;
@@ -112,49 +124,42 @@ button {
         border: none;
         cursor: pointer;
          }
+
+
  form {
-        border: 3px solid #f1f1f1;
+        background-color: #111314;
+        border: 3px solid black;
+
+        button
     }
  input[type=text], textarea {
    font-family: Calibri, Helvetica, sans-serif;
-        width: 100%;
+        width: 90%;
         margin: 8px 0;
+        margin-left: 40px;
         padding: 12px 20px;
         display: inline-block;
         border: 2px solid black;
         box-sizing: border-box;
     }
-    input[type=description] {
 
-      width: 100%;
-      height: 200px;
-      padding: 12px 20px;
-      border: 2px solid black;
-      box-sizing: border-box;
-
-    }
- button:hover {
-        opacity: 0.7;
-    }
-  .cancelbtn {
-        width: auto;
-        padding: 10px 18px;
-        margin: 10px 5px;
-    }
-
+.button2{
+ text-align: center;
+ color: yellow;
+}
 
  .container {
    margin-top: -20px;
    margin-left: 500px;
    margin-right: 500px;
-        padding: 25px;
-        background-color: gray;
+   padding: 25px;
+   background-color: #292B2E;
     }
 
 </style>
 </head>
 <body>
-    <center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="125" height="125"></center>
+    <center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="200" height="200"></center>
 
         <div class="container">
           <form method="post">
@@ -163,13 +168,9 @@ button {
             <input type="text" placeholder="Section Number" name="section"><br><br>
             <input type="text" placeholder="Course Number " name="course_number"><br><br>
             <input type="text" placeholder="Professor " name="professor"><br><br>
-            <textarea id="text" name"forum_description" placeholder="Give breif description of the class..." style="height:200px"></textarea>
-
-
-            <input id="Button" type="submit" value="Create"><br><br>
-
-
-             </form>
+            <div class="button2">
+            <input id="button2" type="submit" value="Create"><br><br>
+            </div>
   </div>
 
 </body>

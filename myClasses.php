@@ -45,8 +45,10 @@ $statement->closeCursor();
  <link rel="preconnect" href="https://fonts.gstatic.com">
  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
  <style>
- body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif, Calibri, Helvetica}
+
  button {
+     font-family: Calibri, Helvetica, sans-serif;
         background-color: black;
         width: 100%;
          color: white;
@@ -55,6 +57,7 @@ $statement->closeCursor();
          border: none;
          cursor: pointer;
           }
+
  .w3-row-padding img {margin-bottom: 12px;}
  /* Set the width of the sidebar to 120px */
  .w3-sidebar {width: 120px;background: #222;margin-top: 0px;}
@@ -81,7 +84,7 @@ $statement->closeCursor();
  </div>
    <a href="createClass.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
      <button class="fa fa-plus w3-xxlarge"></button>
-     <p>Create Class</p>
+     <p>CREATE CLASS</p>
    </a>
  </div>
  </nav>

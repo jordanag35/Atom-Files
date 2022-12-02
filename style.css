@@ -33,7 +33,7 @@ h1{
 }
 
 .subforum{
-    margin-top:20px;
+    margin-top:1px;
 }
 
 .subforum-title{
@@ -221,11 +221,10 @@ header{
 
   /* Search Box styles */
 .search-box{
-    border: solid 1px #ffcb05;
-    margin-top: 0px;
-    padding: 40px;
-    display:flex;
-    justify-content: center;
+    border: solid 3px #ffcb05;
+    margin-left: 20px;
+    padding: 25px;
+    width: 50%;
 }
 
 .search-box select{
@@ -234,18 +233,20 @@ header{
 
 .search-box input{
     padding: 10px;
+    width: 70%
 }
 
 .search-box button{
     padding: 10px;
-    background-color:#fff;
-    color:#000000;
+    background-color:#00274C;
+    color:#fff;
+    width: 10%
 }
 
 .search-box button:hover{
-    background-color: #000000;
+    background-color: #00274C;
     color: #fff;
-    box-shadow: 1px 2px 3px #fff;
+    box-shadow: 2px 3px 4px #ffcb05;
 }
 
 /* search box for smrtphones */

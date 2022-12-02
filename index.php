@@ -69,7 +69,7 @@ button {
 </div>
   <a href="createClass.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <button class="fa fa-plus w3-xxlarge"></button>
-    <p>Create Class</p>
+    <p>CREATE CLASS</p>
   </a>
 </div>
 </nav>
@@ -91,17 +91,23 @@ button {
     <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="992" height="950">
   </header>
 
+  <center>
   <div class="search-box">
       <div>
           <select name="" id="">
-              <option value="Everything">Everything</option>
-              <option value="Titles">Class Title</option>
-              <option value="Descriptions">Descriptions</option>
+            <option value="Everything">Everything</option>
+            <option value="title">Class Title</option>
+            <option value="crn">CRN</option>
+            <option value="section">Section</option>
+            <option value="course_number">Course #</option>
+            <option value="professor">Professor</option>
           </select>
           <input type="text" name="q" placeholder="search ...">
           <button><i class="fa fa-search"></i></button>
       </div>
   </div>
+</center>
+
   </header>
   <div class="container">
   <div class="subforum">
@@ -110,7 +116,7 @@ button {
       </div>
       <div class="subforum-row">
           <div class="subforum-icon subforum-column center">
-              <button><i class="fa fa-check center"></i></button>
+              <button><i class="fa fa-check center w3-hover-yellow"></i></button>
           </div>
           <div class="subforum-description subforum-column">
               <h4><a href="#">CIS 435</a></h4>
@@ -118,10 +124,10 @@ button {
               <p>Section: 001</p>
           </div>
           <div class="subforum-stats subforum-column center">
-              <span>24 Posts</span>
+              <h4><span>24 subscribers</span></h4>
           </div>
-          <div class="subforum-info subforum-column">
-              <b><a href="">Professor</a></b> by <a href="">Teacher Name</a>
+          <div class="subforum-info subforum-column center">
+              <h4><a href="">Teacher Name</a><h4>
           </div>
       </div>
   </div>
