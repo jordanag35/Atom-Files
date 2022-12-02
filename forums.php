@@ -90,3 +90,5 @@ button {
     <a href= "createClass.php"class="w3-bar-item w3-button" style="width:25% !important">Create Class</a>
   </div>
 </div>
+</body>
+</html>
