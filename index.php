@@ -111,22 +111,36 @@ button {
       <div class="subforum-title">
           <h1>UM-Dearbon Classes</h1>
       </div>
+
+      <!-- start loop here-->
+      <?php
+      while ($class = mysqli_fetch_assoc($result)) {
+        $class_id = $class['class_id'];
+        $course_number = $class['course_number'];
+        $title = $class['title'];
+        $section = $class['section'];
+        $posts = $class['posts'];
+        $number_of_students = $class['number_of_students'];
+        $professor = $class['professor'];?>
+
+        <!-- loop this for each class -->
       <div class="subforum-row">
           <div class="subforum-icon subforum-column center">
               <button><i class="fa fa-check center w3-hover-yellow"></i></button>
           </div>
           <div class="subforum-description subforum-column">
-              <h4><a href="#">CIS 435</a></h4>
-              <p>Web Technology</p>
-              <p>Section: 001</p>
+              <h4><a href="#"><?php echo $course_number ?></a></h4>
+              <p><?php echo $title ?></p>
+              <p><?php echo $section ?></p>
           </div>
           <div class="subforum-stats subforum-column center">
-              <h4><span>24 subscribers</span></h4>
+              <h4><span><?php echo $number_of_students?> & students </span></h4>
           </div>
           <div class="subforum-info subforum-column center">
-              <h4><a href="">Teacher Name</a><h4>
+              <h4><a href="#"><?php echo $professor ?> $</a><h4>
           </div>
       </div>
+    <?php } ?>
   </div>
 
   <!--Pagination starts-->
