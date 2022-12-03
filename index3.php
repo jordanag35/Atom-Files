@@ -17,7 +17,7 @@ $result1 = mysqli_query($con, $query1);
 $number_of_classes = mysqli_num_rows($result1);
 //get results
 
-$sql = "SELECT * FROM classes LIMIT 10 ";
+$sql = "SELECT * FROM classes LIMIT 10 OFFSET 20 ";
 $result = mysqli_query($con, $sql);
 
 
