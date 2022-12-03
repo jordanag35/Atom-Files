@@ -89,6 +89,10 @@
    </div>
  </div>
 
+ <header>
+ <center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="400" height="400"></center>
+ </header>
+
 <!DOCTYPE html>
  <!-- Page Content -->
 <html lang="en">
@@ -103,7 +107,7 @@
 </head>
 
 <body>
-<center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="400" height="400"></center>
+      <div class="container">
            <!--Display posts table-->
            <div class="posts-table">
                <div class="table-head">
