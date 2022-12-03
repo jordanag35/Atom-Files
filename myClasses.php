@@ -149,13 +149,7 @@
 
 
 
-               <!--starts here-->
-
-           <!--Pagination starts-->
-               <div class="pagination">
-                   pages: <a href="">1</a><a href="">2</a><a href="">3</a>
-               </div>
-           <!--pagination ends-->
+        
        </div>
 </body>
 
