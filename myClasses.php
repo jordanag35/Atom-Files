@@ -111,9 +111,9 @@
            <!--Display posts table-->
            <div class="posts-table">
                <div class="table-head">
-                   <div class="status">Status</div>
-                   <div class="subjects">Subjects</div>
-                   <div class="replies">Posts - Student</div>
+                   <div class="status center">Status</div>
+                   <div class="subjects">Class</div>
+                   <div class="replies center">Posts - Students</div>
                </div>
 
                <?php
@@ -134,7 +134,7 @@
                        <br>
                        <!--<span>Started by <b><a href="">User</a></b> .</span>-->
                    </div>
-                   <div class="replies">
+                   <div class="replies center">
                        <?php echo $posts ?> posts <br> <?php echo $number_of_students ?> students
                    </div>
                </div>

@@ -107,8 +107,8 @@ button {
   </header>
   <div class="container">
   <div class="subforum">
-      <div class="subforum-title">
-          <h1>UM-Dearbon Classes</h1>
+      <div class="subforum-title center">
+          <h4>UM-Dearbon Classes</h4>
       </div>
 
       <!-- start loop here-->
