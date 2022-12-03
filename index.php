@@ -97,7 +97,6 @@ button {
           <select name="" id="">
             <option value="Everything">Everything</option>
             <option value="title">Class Title</option>
-            <option value="crn">CRN</option>
             <option value="section">Section</option>
             <option value="course_number">Course #</option>
             <option value="professor">Professor</option>
