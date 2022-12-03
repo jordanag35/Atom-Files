@@ -1,32 +1,14 @@
 <?php
 
-/*session_start();
+session_start();
 
-try{
+$results_per_set = 10;
+$class_id = $_GET['class_id'];
 
-$connString = "mysql:host=localhost; dbname=login_db";
-$user_name = "root";
-$password = "";
-
-$pdo = new PDO($connString, $user_name, $password);
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-$user_id = $_POST['user_id'];
-
-$query= "SELECT status FROM users WHERE user_id = :user_id";
-$statement = $pdo->prepare($query);
-$statement->bindValue(':user_id', $user_id);
-$statement->execute();
-$status = $statement->fetch();
-$statement->closeCursor();
-
-
-
-}catch (PDOException $e) {
-
-  die($e->getMessage());
-
-}*/
+//get all class id's
+$query= "select *from classes c where c.class_id = '$class_id'";
+$results = mysqli_query($con, $query);
+$number_of_results = mysqli_number_of_rows($results);
 
 
 
