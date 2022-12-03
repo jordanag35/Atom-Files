@@ -165,10 +165,9 @@ Body {
 
         <div class="container">
           <form method="post">
-            <input type="text" placeholder="Class Name" name="title"><br><br>
-            <input type="text" placeholder="CRN Number" name="crn"><br><br>
-            <input type="text" placeholder="Section Number" name="section"><br><br>
             <input type="text" placeholder="Course Number " name="course_number"><br><br>
+            <input type="text" placeholder="Class Name" name="title"><br><br>
+            <input type="text" placeholder="Section Number" name="section"><br><br>
             <input type="text" placeholder="Professor " name="professor"><br><br>
             <div class="button2">
             <input id="button2" type="submit" value="Create"><br><br>
