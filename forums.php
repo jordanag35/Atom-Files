@@ -6,10 +6,13 @@ session_start();
     include("functions.php");
 
 
-    if($_SERVER['REQUEST_METHOD'] == "POST")
+    //if($_SERVER['REQUEST_METHOD'] == "POST")
 
+    //gets the class id passed in from the link, stores it in the variable $class_id for further use
+    $class_id = $_GET['class_id'];
 
-
+    //prints $class_id on screen for testing
+    echo $class_id;
 
 
 
