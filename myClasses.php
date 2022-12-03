@@ -113,8 +113,7 @@
                <div class="table-head">
                    <div class="status">Status</div>
                    <div class="subjects">Subjects</div>
-                   <div class="replies">Replies/Views</div>
-                   <div class="last-reply">Last Reply</div>
+                   <div class="replies">Posts - Student</div>
                </div>
 
                <?php
@@ -138,18 +137,15 @@
                    <div class="replies">
                        <?php echo $posts ?> posts <br> <?php echo $number_of_students ?> students
                    </div>
-
-                   <div class="last-reply">
-                       Oct 12 2021
-                       <br>By <b><a href="">User</a></b>
-                   </div>
                </div>
                <!-- end loop content -->
                <?php } ?>
 
 
 
-        
+
+
+
        </div>
 </body>
 
