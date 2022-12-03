@@ -1,14 +1,13 @@
 <?php
-session_start();
+//session_start();
 
-  $_SESSION;
+//$_SESSION;
 
-  //include("connection.php");
-  //include("functions.php");
+include("connections1.php");
 
-  //$user_data = check_login($con);
+$query = "select * from classes";
 
-
+$result = mysqli_query($con, $query);
 
 
 
