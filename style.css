@@ -238,13 +238,13 @@ header{
 
 .search-box button{
     padding: 10px;
-    background-color:#00274C;
+    background-color:#2a57bc;
     color:#fff;
     width: 10%
 }
 
 .search-box button:hover{
-    background-color: #00274C;
+    background-color: ##2a57bc;
     color: #fff;
     box-shadow: 2px 3px 4px #ffcb05;
 }
