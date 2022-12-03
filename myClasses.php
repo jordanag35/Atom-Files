@@ -124,7 +124,7 @@ $statement->closeCursor();
                <div class="table-row">
                    <div class="status"><i class="fa fa-check"></i></div>
                    <div class="subjects">
-                       <a href="">CIS 435</a>
+                       <a href="forums.php?class_id=<?php echo $class_id ?>">CIS 435</a>
                        <p>Web Technology
                        Section: 001</p>
                        <br>
