@@ -6,13 +6,10 @@ session_start();
     include("functions.php");
 
 
-    //if($_SERVER['REQUEST_METHOD'] == "POST")
+    if($_SERVER['REQUEST_METHOD'] == "POST")
 
-    //gets the class id passed in from the link, stores it in the variable $class_id for further use
-    $class_id = $_GET['class_id'];
 
-    //prints $class_id on screen for testing
-    echo $class_id;
+
 
 
 
@@ -119,7 +116,7 @@ button {
                 <div class="authors">
                     <div class="username"><a href="">Username</a></div>
                     <div>Role (Student or TA)</div>
-                    <img src="UMD.png" alt="Subscriber" width="50" height="50">
+                    <img src="UMD.png" alt="Subscriber" width="130" height="130">
                 </div>
                 <div class="content">
                     Just a random content of a random topic.
@@ -127,7 +124,6 @@ button {
                     <br><br>
                     Nothing more and nothing less.
                     <br>
-                    <hr>
                     Regards username
                     <br>
                     <div class="comment">
@@ -148,10 +144,8 @@ button {
             <div class="body">
                 <div class="authors">
                     <div class="username"><a href="">AnotherUser</a></div>
-                    <div>Role</div>
-                    <img src="UMD.png" alt="Subsrciber">
-                    <div>Posts: <u>455</u></div>
-                    <div>Points: <u>4586</u></div>
+                    <div>Role (Student or TA)</div>
+                    <img src="UMD.png" alt="Subscriber" width="130" height="130">
                 </div>
                 <div class="content">
                     Just a comment of the above random topic.

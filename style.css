@@ -425,8 +425,8 @@ footer{
 }
 
 .body .authors img{
-    max-width: 50px;
-    max-height: 80px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .body .content .comment button{
