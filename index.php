@@ -133,10 +133,10 @@ button {
               <p><?php echo $section ?></p>
           </div>
           <div class="subforum-stats subforum-column center">
-              <h4><span><?php echo $number_of_students?> & students </span></h4>
+              <h4><span><?php echo $number_of_students?> students </span></h4>
           </div>
           <div class="subforum-info subforum-column center">
-              <h4><a href="#"><?php echo $professor ?> $</a><h4>
+              <h4><a href="#"><?php echo $professor ?></a><h4>
           </div>
       </div>
     <?php } ?>
