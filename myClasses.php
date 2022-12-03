@@ -116,6 +116,7 @@ $statement->closeCursor();
 </head>
 
 <body>
+      <div class="container">
            <!--Display posts table-->
            <div class="posts-table">
                <div class="table-head">
