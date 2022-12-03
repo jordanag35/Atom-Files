@@ -1,33 +1,24 @@
 <?php
 
-/*session_start();
+  include("connections1.php");
 
-try{
+  //placeholder - replace with getting the ID of logged in user later
+  $user_id = 2;
 
-$connString = "mysql:host=localhost; dbname=login_db";
-$user_name = "root";
-$password = "";
+  $query = "select c.class_id, c.section, c.number_of_students, c.course_number, c.title, c.professor, c.posts from classes c, class_registration r, users u where c.class_id = r.class_id and r.user_id = u.id and u.id = '$user_id'";
 
-$pdo = new PDO($connString, $user_name, $password);
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $result = mysqli_query($con, $query);
 
-$user_id = $_POST['user_id'];
+  //echo $result;
 
-$query= "SELECT status FROM users WHERE user_id = :user_id";
-$statement = $pdo->prepare($query);
-$statement->bindValue(':user_id', $user_id);
-$statement->execute();
-$status = $statement->fetch();
-$statement->closeCursor();
-
-
-
-}catch (PDOException $e) {
-
-  die($e->getMessage());
-
-}*/
-
+  /*
+  $class_id = 5;
+  $course_number = "CIS 435";
+  $title = "Web Technology";
+  $section = 001;
+  $posts = 2;
+  $number_of_students = 15;
+  */
 
 
  ?>
@@ -98,10 +89,6 @@ $statement->closeCursor();
    </div>
  </div>
 
- <header>
- <center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="400" height="400"></center>
- </header>
-
 <!DOCTYPE html>
  <!-- Page Content -->
 <html lang="en">
@@ -116,7 +103,7 @@ $statement->closeCursor();
 </head>
 
 <body>
-      <div class="container">
+<center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="400" height="400"></center>
            <!--Display posts table-->
            <div class="posts-table">
                <div class="table-head">
@@ -125,17 +112,27 @@ $statement->closeCursor();
                    <div class="replies">Replies/Views</div>
                    <div class="last-reply">Last Reply</div>
                </div>
+
+               <?php
+               while ($class = mysqli_fetch_assoc($result)) {
+                 $class_id = $class['class_id'];
+                 $course_number = $class['course_number'];
+                 $title = $class['title'];
+                 $section = $class['section'];
+                 $posts = $class['posts'];
+                 $number_of_students = $class['number_of_students'];?>
+               <!-- loop this for each class -->
                <div class="table-row">
                    <div class="status"><i class="fa fa-check"></i></div>
                    <div class="subjects">
-                       <a href="">CIS 435</a>
-                       <p>Web Technology
-                       Section: 001</p>
+                       <a href="forums.php?class_id=<?php echo $class_id ?>"><?php echo $course_number ?></a>
+                       <p><?php echo $title ?> &nbsp
+                       Section: <?php echo $section ?></p>
                        <br>
-                       <span>Started by <b><a href="">User</a></b> .</span>
+                       <!--<span>Started by <b><a href="">User</a></b> .</span>-->
                    </div>
                    <div class="replies">
-                       2 replies <br> 125 views
+                       <?php echo $posts ?> posts <br> <?php echo $number_of_students ?> students
                    </div>
 
                    <div class="last-reply">
@@ -143,6 +140,11 @@ $statement->closeCursor();
                        <br>By <b><a href="">User</a></b>
                    </div>
                </div>
+               <!-- end loop content -->
+               <?php } ?>
+
+
+
                <!--starts here-->
 
            <!--Pagination starts-->
