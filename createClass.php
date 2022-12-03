@@ -2,7 +2,7 @@
 //newest push
 
 //session_start();
-include("connection.php");
+include("connections1.php");
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
@@ -160,7 +160,7 @@ Body {
 </style>
 </head>
 <body>
-    <center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="200" height="200"></center>
+    <center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="400" height="400"></center>
 
         <div class="container">
           <form method="post">

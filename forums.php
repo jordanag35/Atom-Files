@@ -60,8 +60,6 @@ button {
 </head>
 <body class="w3-black">
 
-
-
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
@@ -104,53 +102,21 @@ button {
 </head>
 
 <body>
-    <header>
-        <!--NavBar Section-->
-        <div class="navbar">
-            <nav class="navigation hide" id="navigation">
-                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="forums.html">Forums</a></li>
-                    <li class="nav-item"><a href="posts.html">Posts</a></li>
-                    <li class="nav-item"><a href="detail.html">Detail</a></li>
-                </ul>
-            </nav>
-            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
-            <div class="brand">My Forum</div>
-        </div>
-        <!--SearchBox Section-->
-        <div class="search-box">
-            <div>
-                <select name="" id="">
-                    <option value="Everything">Everything</option>
-                    <option value="Titles">Titles</option>
-                    <option value="Descriptions">Descriptions</option>
-                </select>
-                <input type="text" name="q" placeholder="search ...">
-                <button><i class="fa fa-search"></i></button>
-            </div>
-        </div>
+<center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="400" height="400"></center>
     <div class="container">
-        <!--Navigation-->
-        <div class="navigate">
-            <span><a href="">MyForum - Forums</a> >> <a href="">random subforum</a> >> <a href="">random topic</a></span>
-        </div>
-
         <!--Topic Section-->
         <div class="topic-container">
             <!--Original thread-->
             <div class="head">
                 <div class="authors">Author</div>
-                <div class="content">Topic: random topic (Read 1325 Times)</div>
+                <div class="content">Topic: random topic</div>
             </div>
 
             <div class="body">
                 <div class="authors">
                     <div class="username"><a href="">Username</a></div>
-                    <div>Role</div>
-                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
-                    <div>Posts: <u>45</u></div>
-                    <div>Points: <u>4586</u></div>
+                    <div>Role (Student or TA)</div>
+                    <img src="UMD.png" alt="Subscriber" width="50" height="50">
                 </div>
                 <div class="content">
                     Just a random content of a random topic.
@@ -180,7 +146,7 @@ button {
                 <div class="authors">
                     <div class="username"><a href="">AnotherUser</a></div>
                     <div>Role</div>
-                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
+                    <img src="UMD.png" alt="Subsrciber">
                     <div>Posts: <u>455</u></div>
                     <div>Points: <u>4586</u></div>
                 </div>
@@ -202,43 +168,6 @@ button {
             <textarea name="reply" id="" placeholder="reply here ... "></textarea>
             <input type="submit" value="submit">
         </div>
-
-
-        <!--Another Comment With replies-->
-        <div class="comments-container">
-            <div class="body">
-                <div class="authors">
-                    <div class="username"><a href="">AnotherUser</a></div>
-                    <div>Role</div>
-                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
-                    <div>Posts: <u>455</u></div>
-                    <div>Points: <u>4586</u></div>
-                </div>
-                <div class="content">
-                    Just a comment of the above random topic.
-                    <br>To see how it looks like.
-                    <br><br>
-                    Nothing more and nothing less.
-                    <br>
-                    <br>
-                    <div class="comment">
-                        <button onclick="showReply()">Reply</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Reply Area-->
-        <div class="comment-area hide" id="reply-area">
-            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
-            <input type="submit" value="submit">
-        </div>
-
-
-
-    </div>
-    <footer>
-        <span>&copy;  Selmi Abderrahim | All Rights Reserved</span>
-    </footer>
     <script src="main.js"></script>
 </body>
 </html>

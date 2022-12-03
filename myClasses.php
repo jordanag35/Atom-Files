@@ -98,12 +98,21 @@ $statement->closeCursor();
    </div>
  </div>
 
+<!DOCTYPE html>
  <!-- Page Content -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Classes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+</head>
 
-           <!--Navigation-->
-           <div class="navigate">
-               <span>My Classes</span>
-           </div>
+<body>
+<center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="400" height="400"></center>
            <!--Display posts table-->
            <div class="posts-table">
                <div class="table-head">
@@ -138,7 +147,7 @@ $statement->closeCursor();
                </div>
            <!--pagination ends-->
        </div>
+</body>
 
-
-   </body>
-   </html>
+</body>
+</html>
