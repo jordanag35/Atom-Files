@@ -1,34 +1,9 @@
 <?php
 
-/*session_start();
-
-try{
-
-$connString = "mysql:host=localhost; dbname=login_db";
-$user_name = "root";
-$password = "";
-
-$pdo = new PDO($connString, $user_name, $password);
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-$user_id = $_POST['user_id'];
-
-$query= "SELECT status FROM users WHERE user_id = :user_id";
-$statement = $pdo->prepare($query);
-$statement->bindValue(':user_id', $user_id);
-$statement->execute();
-$status = $statement->fetch();
-$statement->closeCursor();
-
-
-
-}catch (PDOException $e) {
-
-  die($e->getMessage());
-
-}*/
-
-
+  $class_id = 5;
+  $course_number = "CIS 435";
+  $title = "Web Technology";
+  $section = 001;
 
  ?>
 
@@ -121,12 +96,14 @@ $statement->closeCursor();
                    <div class="replies">Replies/Views</div>
                    <div class="last-reply">Last Reply</div>
                </div>
+
+               <!-- loop this for each class -->
                <div class="table-row">
                    <div class="status"><i class="fa fa-check"></i></div>
                    <div class="subjects">
-                       <a href="">CIS 435</a>
-                       <p>Web Technology
-                       Section: 001</p>
+                       <a href="forums.php?class_id=<?php echo $class_id ?>"><?php echo $course_number ?></a>
+                       <p><?php echo $title ?>
+                       Section: <?php echo $section ?></p>
                        <br>
                        <span>Started by <b><a href="">User</a></b> .</span>
                    </div>
@@ -139,6 +116,9 @@ $statement->closeCursor();
                        <br>By <b><a href="">User</a></b>
                    </div>
                </div>
+               <!-- end loop content -->
+
+
                <!--starts here-->
 
            <!--Pagination starts-->
