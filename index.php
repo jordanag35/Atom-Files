@@ -52,8 +52,6 @@ button {
 </head>
 <body class="w3-black">
 
-
-
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
@@ -131,23 +129,12 @@ button {
       </div>
   </div>
 
+  <!--Pagination starts-->
+      <div class="pagination">
+          pages: <a href="">1</a><a href="">2</a><a href="">3</a>
+      </div>
+  <!--pagination ends-->
 
-
-  </div>
-  <!---->
-  </div>
-
- <!-- Forum Info
-  <div class="forum-info">
-  <div class="chart">
-      MyForum - Stats &nbsp;<i class="fa fa-bar-chart"></i>
-  </div>
-  <span><u>5,369</u> Posts in <u>48</u> Topics by <u>8,124</u> Members.</span><br>
-  <span>Latest post: <b><a href="">Random post</a></b> on Dec 15 2021 By <a href="">RandomUser</a></span>.<br>
-  <span>Check <a href="">the latest posts</a> .</span><br>
-  </div>
-
-  -->
   </body>
   </html>
 
@@ -155,5 +142,4 @@ button {
 <!-- END PAGE CONTENT -->
 </div>
 
-<!--correct index.php file -->
 <!--correct index.php file -->
