@@ -2,14 +2,13 @@
 //newest push
 
 //session_start();
-include("connections1.php");
+include("connection.php");
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
 
     //Somethin was posted
   $title =  $_POST['title'];
-  $crn =  $_POST['crn'];
   $section = $_POST['section'];
   $course_number = $_POST['course_number'];
   $professor = $_POST['professor'];
@@ -20,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
   //{
 
       //save to database
-      $query = "insert into classes (crn,section,course_number,title,professor) values ('$crn','$section','$course_number','$title','$professor')";
+      $query = "insert into classes (section,course_number,title,professor) values ('$section','$course_number','$title','$professor')";
 
       mysqli_query($con, $query);
 
