@@ -89,6 +89,10 @@ button {
   </div>
 </div>
 
+<header>
+<center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="400" height="400"></center>
+</header>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,7 +106,17 @@ button {
 </head>
 
 <body>
-<center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="400" height="400"></center>
+<div class="container">
+  <!--Comment Button-->
+  <center><div class="search-box">
+      <center><button onclick="showComment()">Post</button></center>
+  </div></center>
+  <!--Comment Area-->
+  <div class="comment-area hide" id="comment-area">
+      <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+      <input type="submit" value="submit">
+  </div>
+</div>
     <div class="container">
         <!--Topic Section-->
         <div class="topic-container">
@@ -126,44 +140,8 @@ button {
                     <br>
                     Regards username
                     <br>
-                    <div class="comment">
-                        <button onclick="showComment()">Comment</button>
-                    </div>
                 </div>
             </div>
-        </div>
-
-        <!--Comment Area-->
-        <div class="comment-area hide" id="comment-area">
-            <textarea name="comment" id="" placeholder="comment here ... "></textarea>
-            <input type="submit" value="submit">
-        </div>
-
-        <!--Comments Section-->
-        <div class="comments-container">
-            <div class="body">
-                <div class="authors">
-                    <div class="username"><a href="">AnotherUser</a></div>
-                    <div>Role (Student or TA)</div>
-                    <img src="UMD.png" alt="Subscriber" width="130" height="130">
-                </div>
-                <div class="content">
-                    Just a comment of the above random topic.
-                    <br>To see how it looks like.
-                    <br><br>
-                    Nothing more and nothing less.
-                    <br>
-                    <br>
-                    <div class="comment">
-                        <button onclick="showReply()">Reply</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Reply Area-->
-        <div class="comment-area hide" id="reply-area">
-            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
-            <input type="submit" value="submit">
         </div>
     <script src="main.js"></script>
 </body>

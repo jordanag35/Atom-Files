@@ -111,11 +111,8 @@
            <!--Display posts table-->
            <div class="posts-table">
                <div class="table-head">
-                   <div class="status center">Status</div>
-                   <div class="subjects">Class</div>
-                   <div class="replies center">Posts - Students</div>
+                   <div class="status center"><h2>Registered Classes</h2></div>
                </div>
-
                <?php
                while ($class = mysqli_fetch_assoc($result)) {
                  $class_id = $class['class_id'];
@@ -126,7 +123,9 @@
                  $number_of_students = $class['number_of_students'];?>
                <!-- loop this for each class -->
                <div class="table-row">
-                   <div class="status"><i class="fa fa-check"></i></div>
+                 <div class="subforum-icon subforum-column center">
+                     <button><i class="fa fa-check center w3-hover-yellow"></i></button>
+                 </div>
                    <div class="subjects">
                        <a href="forums.php?class_id=<?php echo $class_id ?>"><?php echo $course_number ?></a>
                        <p><?php echo $title ?> &nbsp
@@ -135,7 +134,7 @@
                        <!--<span>Started by <b><a href="">User</a></b> .</span>-->
                    </div>
                    <div class="replies center">
-                       <?php echo $posts ?> posts <br> <?php echo $number_of_students ?> students
+                       <h3><?php echo $posts ?> posts <br> <?php echo $number_of_students ?> students</h3>
                    </div>
                </div>
                <!-- end loop content -->

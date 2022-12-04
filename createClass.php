@@ -72,8 +72,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
    </style>
    </head>
-
-
    <body class="w3-black">
 
    <!-- Icon Bar (Sidebar - hidden on small screens) -->
@@ -100,19 +98,17 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
      <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
        <a href="index.php" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-       <a href="index.php" class="w3-bar-home w3-button" style="width:25% !important">My Classes</a>
-       <a href= "myClasses.php"class="w3-bar-user w3-button" style="width:25% !important">Create Class</a>
-
-
+       <a href="myClasses.php" class="w3-bar-home w3-button" style="width:25% !important">My Classes</a>
+       <a href= "createClass.php"class="w3-bar-user w3-button" style="width:25% !important">Create Class</a>
      </div>
    </div>
 
+   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+     <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="400" height="400">
+   </header>
 
 <style>
-
 Body {
-
-  font-family: Calibri, Helvetica, sans-serif;
   color: white;
   background-color: black;
 }
@@ -156,13 +152,13 @@ Body {
    padding: 25px;
    background-color: #292B2E;
     }
-
 </style>
-</head>
-<body>
-    <center> <img src="Afterhours.png" alt="Afterhours" class="w3-image" width="400" height="400"></center>
 
+
+
+<body>
         <div class="container">
+              <center><div class="status center"><h2>Create Class</h2></div></center>
           <form method="post">
             <input type="text" placeholder="Course Number " name="course_number"><br><br>
             <input type="text" placeholder="Class Name" name="title"><br><br>
@@ -170,8 +166,8 @@ Body {
             <input type="text" placeholder="Professor " name="professor"><br><br>
             <div class="button2">
             <input id="button2" type="submit" value="Create"><br><br>
-            </div>
-  </div>
+          </div>
+        </div>
 
 </body>
 </html>

@@ -119,7 +119,7 @@ button {
   <div class="container">
   <div class="subforum">
       <div class="subforum-title center">
-          <h4>UM-Dearbon Classes</h4>
+          <h2>UM-Dearbon Classes</h2>
       </div>
 
       <!-- start loop here-->
@@ -141,7 +141,7 @@ button {
           <div class="subforum-description subforum-column">
               <h4><a href="#"><?php echo $course_number ?></a></h4>
               <p><?php echo $title ?></p>
-              <p>Section <?php echo $section ?></p>
+              <p><?php echo $section ?></p>
           </div>
           <div class="subforum-stats subforum-column center">
               <h4><span><?php echo $number_of_students?> students </span></h4>

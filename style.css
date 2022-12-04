@@ -223,7 +223,7 @@ header{
 .search-box{
     border: solid 3px #ffcb05;
     margin-left: 20px;
-    padding: 25px;
+    padding: 10px;
     width: 50%;
 }
 
@@ -314,7 +314,6 @@ footer{
 }
 
 /* posts table's body  */
-
 .table-row{
   margin-left: 120px;
     display: flex;
@@ -430,12 +429,20 @@ footer{
 }
 
 .body .content .comment button{
-    border:none;
+    border: solid 3px #ffcb05;
     padding:10px;
     font-weight: bolder;
     box-shadow: 4px 6px #fff;
     cursor: pointer;
     float: right;
+}
+
+.comments button{
+  border: solid 3px #ffcb05;
+  padding: 10px;
+  background-color:#2a57bc;
+  color:#2a57bc;
+  width: 10%
 }
 
 /* comment section */
