@@ -119,7 +119,7 @@ button {
   <div class="container">
   <div class="subforum">
       <div class="subforum-title center">
-          <h2>UM-Dearbon Classes</h2>
+          <h2>University of Michigan-Dearbon Classes</h2>
       </div>
 
       <!-- start loop here-->
