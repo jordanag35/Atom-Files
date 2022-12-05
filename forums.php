@@ -121,9 +121,8 @@ button {
         <!--Topic Section-->
         <div class="topic-container">
             <!--Original thread-->
-            <div class="head">
-                <div class="authors">Author</div>
-                <div class="content">Topic: random topic</div>
+            <div class="subforum-title center">
+                <center><h3><div class="authors">Course Number | Course Title | Section</div></h3></center>
             </div>
 
             <div class="body">
