@@ -7,7 +7,8 @@ include("connections1.php");
 $count = 0;
 $classes_per_page = 10;
 
-
+//PLACEHOLDER: find the user id here
+$user_id = 2;
 
 
 //paginatin php code
