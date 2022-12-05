@@ -5,8 +5,16 @@ session_start();
     include("connections1.php");
     include("functions.php");
 
-    //PLACEHOLDER: replace with getting the user id
-    $user_id = 2;
+    if (isset($_SESSION['user_id'])) {
+      $user_id = $_SESSION['user_id'];
+    } else {
+      header("location: login.php");
+    }
+
+    $is_admin_query = "select u.is_admin from users u where u.id = '$user_id'";
+    $admin_result = mysqli_query($con, $is_admin_query);
+    $admin_data = mysqli_fetch_assoc($admin_result);
+    $is_admin = $admin_data['is_admin'];
 
     $class_id = $_GET['class_id'];
 
@@ -21,6 +29,8 @@ session_start();
     if (isset($_POST['submit'])) {
         $comment = $_POST['comment'];
         $query = "insert into posts (forum_id, user_id, content) values ('$class_id', '$user_id', '$comment')";
+        mysqli_query($con,$query);
+        $query = "update classes set posts = posts + 1 where class_id = '$class_id'";
         mysqli_query($con,$query);
     }
 
@@ -90,10 +100,12 @@ button {
     <p>MY CLASSES</p>
   </a>
 </div>
+<?php if ($is_admin == 1) { ?>
   <a href="createClass.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <button class="fa fa-plus w3-xxlarge"></button>
     <p>Create Class</p>
   </a>
+  <?php } ?>
 </div>
 </nav>
 

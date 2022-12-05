@@ -1,7 +1,7 @@
 <?php
-session_start();
+    session_start();
 
-    include("connection.php");
+    include("connections1.php");
     include("functions.php");
 
 
@@ -30,7 +30,10 @@ session_start();
 
               if($user_data['password'] === $password)
               {
-                $_SESSION['user_id'] = $user_data['user_id'];
+                if (isset($_SESSION['user_id'])) {
+                  unset($_SESSION['user_id']);
+                }
+                $_SESSION['user_id'] = $user_data['id'];
                 header("Location: index.php");
                 die;
 

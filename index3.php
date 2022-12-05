@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 
 //$_SESSION;
 
@@ -7,9 +7,16 @@ include("connections1.php");
 $count = 0;
 $classes_per_page = 10;
 
-//PLACEHOLDER: find the user id here
-$user_id = 2;
+if (isset($_SESSION['user_id'])) {
+  $user_id = $_SESSION['user_id'];
+} else {
+  header("location: login.php");
+}
 
+$is_admin_query = "select u.is_admin from users u where u.id = '$user_id'";
+$admin_result = mysqli_query($con, $is_admin_query);
+$admin_data = mysqli_fetch_assoc($admin_result);
+$is_admin = $admin_data['is_admin'];
 
 //paginatin php code
 //total number of classes in the database
@@ -103,10 +110,12 @@ button {
     <p>MY CLASSES</p>
   </a>
 </div>
+<?php if ($is_admin == 1) { ?>
   <a href="createClass.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <button class="fa fa-plus w3-xxlarge"></button>
     <p>CREATE CLASS</p>
   </a>
+  <?php } ?>
 </div>
 </nav>
 

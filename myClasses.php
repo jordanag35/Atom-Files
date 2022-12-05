@@ -1,9 +1,19 @@
 <?php
+  session_start();
 
   include("connections1.php");
 
-  //placeholder - replace with getting the ID of logged in user later
-  $user_id = 2;
+  if (isset($_SESSION['user_id'])) {
+    $user_id = $_SESSION['user_id'];
+  } else {
+    header("location: login.php");
+  }
+
+  $is_admin_query = "select u.is_admin from users u where u.id = '$user_id'";
+  $admin_result = mysqli_query($con, $is_admin_query);
+  $admin_data = mysqli_fetch_assoc($admin_result);
+  $is_admin = $admin_data['is_admin'];
+
 
   $query = "select c.class_id, c.section, c.number_of_students, c.course_number, c.title, c.professor, c.posts from classes c, class_registration r, users u where c.class_id = r.class_id and r.user_id = u.id and u.id = '$user_id'";
 
@@ -73,10 +83,12 @@
      <p>MY CLASSES</p>
    </a>
  </div>
+ <?php if ($is_admin == 1) { ?>
    <a href="createClass.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
      <button class="fa fa-plus w3-xxlarge"></button>
      <p>CREATE CLASS</p>
    </a>
+   <?php } ?>
  </div>
  </nav>
 

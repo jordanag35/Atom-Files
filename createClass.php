@@ -1,7 +1,7 @@
 <?php
 //newest push
 
-//session_start();
+session_start();
 include("connections1.php");
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
@@ -23,7 +23,12 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 
       mysqli_query($con, $query);
 
-      header("Location: forums.php");
+      $query = "select class_id from classes where title = '$title' and section = '$section' and course_number = '$course_number'";
+      $result = mysqli_query($con,$query);
+      $data = mysqli_fetch_assoc($result);
+      $class_id = $data['class_id'];
+
+      header("Location: forums.php?class_id=$class_id");
       die;
 
   //}else
