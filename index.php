@@ -119,7 +119,7 @@ button {
   </div>
 </div>
 
-!--login button top right-->
+<!--login button top right-->
 <div align="right" class="button1" id="button">
   <a href="login.php"><button align="right" class="button1">Login/Signup</button></a>
 
