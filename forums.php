@@ -5,6 +5,8 @@ session_start();
     include("connections1.php");
     include("functions.php");
 
+    //PLACEHOLDER: replace with getting the user id
+    $user_id = 2;
 
     $class_id = $_GET['class_id'];
 
@@ -15,6 +17,12 @@ session_start();
     $course_number = $class_data['course_number'];
     $title = $class_data['title'];
     $section = $class_data['section'];
+
+    if (isset($_POST['submit'])) {
+        $comment = $_POST['comment'];
+        $query = "insert into posts (forum_id, user_id, content) values ('$class_id', '$user_id', '$comment')";
+        mysqli_query($con,$query);
+    }
 
 
     $query = "select * from posts p where p.forum_id = '$class_id' order by timestamp asc";
@@ -122,8 +130,10 @@ button {
   </div></center>
   <!--Comment Area-->
   <div class="comment-area hide" id="comment-area">
+    <form method="post" action="">
       <textarea name="comment" id="" placeholder="comment here ... "></textarea>
-      <input type="submit" value="submit">
+      <input type="submit" value="submit" name="submit"></input>
+    </form>
   </div>
 </div>
     <div class="container">
@@ -156,7 +166,7 @@ button {
                     <img src="UMD.png" alt="Subscriber" width="130" height="130">
                 </div>
                 <div class="content">
-                    <?php echo $post_content ?>
+                    <pre><?php echo $post_content ?></pre>
                 </div>
             </div>
             <!-- end loop -->
