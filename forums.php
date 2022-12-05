@@ -6,8 +6,15 @@ session_start();
     include("functions.php");
 
 
-    if($_SERVER['REQUEST_METHOD'] == "POST")
+    $class_id = $_GET['class_id'];
 
+    $query = "select * from classes c where c.class_id = '$class_id'";
+    $result = mysqli_query($con,$query);
+    $class_data = mysqli_fetch_assoc($result);
+
+    $course_number = $class_data['course_number'];
+    $title = $class_data['title'];
+    $section = $class_data['section'];
 
 
 
@@ -122,7 +129,7 @@ button {
         <div class="topic-container">
             <!--Original thread-->
             <div class="subforum-title center">
-                <center><h3><div class="authors">Course Number | Course Title | Section</div></h3></center>
+                <center><h3><div class="authors"><?php echo $course_number?> | <?php echo $title?> | Section <?php echo $section?></div></h3></center>
             </div>
 
             <div class="body">
