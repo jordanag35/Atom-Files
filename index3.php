@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
     $query = "update classes c set c.number_of_students = c.number_of_students + 1 where c.class_id = '$submitted_id'";
     mysqli_query($con,$query);
   }
-
+}
 ?>
 
 <!DOCTYPE html>
