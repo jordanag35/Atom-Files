@@ -22,29 +22,33 @@ $sql = "SELECT * FROM classes LIMIT 10 OFFSET 20 ";
 $result = mysqli_query($con, $sql);
 
 $submitted_id = 0;
-if (isset($_POST['submit'])) {
-  $submitted_id = $_POST['class_id'];
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if (isset($_POST['submit'])) {
+    $submitted_id = $_POST['class_id'];
 
-  //figure out if the user is in the class already
-  $query = "select * from class_registration where class_id='$submitted_id' and user_id='$user_id'";
-  $reg_result = mysqli_query($con, $query);
-  $in_class = mysqli_num_rows($reg_result);
+    //figure out if the user is in the class already
+    $query = "select * from class_registration where class_id='$submitted_id' and user_id='$user_id'";
+    $reg_result = mysqli_query($con, $query);
+    $in_class = mysqli_num_rows($reg_result);
 
-  if ($in_class > 0) {
-    //is in the class: de-register
-    $query = "DELETE FROM class_registration WHERE class_id = '$submitted_id' AND user_id = '$user_id'";
-    mysqli_query($con, $query);
+    if ($in_class > 0) {
+      //is in the class: de-register
+      $query = "DELETE FROM class_registration WHERE class_id = '$submitted_id' AND user_id = '$user_id'";
+      mysqli_query($con, $query);
 
-    $query = "update classes c set c.number_of_students = c.number_of_students - 1 where c.class_id = '$submitted_id'";
-    mysqli_query($con,$query);
-  } else {
-    //isn't in the class: register
-    $query = "insert into class_registration (class_id, user_id) values ('$submitted_id', '$user_id')";
-    mysqli_query($con, $query);
+      $query = "update classes c set c.number_of_students = c.number_of_students - 1 where c.class_id = '$submitted_id'";
+      mysqli_query($con,$query);
+    } else {
+      //isn't in the class: register
+      $query = "insert into class_registration (class_id, user_id) values ('$submitted_id', '$user_id')";
+      mysqli_query($con, $query);
 
-    $query = "update classes c set c.number_of_students = c.number_of_students + 1 where c.class_id = '$submitted_id'";
-    mysqli_query($con,$query);
+      $query = "update classes c set c.number_of_students = c.number_of_students + 1 where c.class_id = '$submitted_id'";
+      mysqli_query($con,$query);
+    }
   }
+
+  header("Location: index.php");
 }
 ?>
 
