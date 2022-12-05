@@ -114,6 +114,11 @@ button {
   </div>
 </div>
 
+!--login button top right-->
+<div align="right" class="button1" id="button">
+  <a href="login.php"><button align="right" class="button1">Login/Signup</button></a>
+
+</div>
 
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">

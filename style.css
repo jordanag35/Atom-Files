@@ -27,6 +27,19 @@ h1{
 /* ########################################### */
 /*           Forums.html                       */
 /* ########################################### */
+.button1 button{
+  background-color: #000;
+  border: solid 3px #ffcb05;
+  color: #ffcb05;
+  width: 10%;
+  padding: 10px 20px;
+  text-align: center;
+  align-self: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
 .container{
     margin: 120px;
     padding: 20px;
