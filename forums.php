@@ -17,6 +17,8 @@ session_start();
     $section = $class_data['section'];
 
 
+    $query = "select * from posts p where p.forum_id = '$class_id' order by timestamp asc";
+    $posts_data = mysqli_query($con,$query);
 
 
 
@@ -131,23 +133,34 @@ button {
             <div class="subforum-title center">
                 <center><h3><div class="authors"><?php echo $course_number?> | <?php echo $title?> | Section <?php echo $section?></div></h3></center>
             </div>
-
+            <?php
+            if (mysqli_num_rows($posts_data) > 0) {
+              while ($post = mysqli_fetch_assoc($posts_data)) {
+                $user_id = $post['user_id'];
+                $query = "select * from users where id = '$user_id'";
+                $user_results = mysqli_query($con,$query);
+                $user = mysqli_fetch_assoc($user_results);
+                $username = $user['user_name'];
+                $is_ta = $user['is_admin'];
+                $post_content = $post['content'];
+                $role = "Student";
+                if ($is_ta == 1) {
+                  $role = "Teacher Assistant";
+                }
+            ?>
+            <!-- start loop here -->
             <div class="body">
                 <div class="authors">
-                    <div class="username"><a href="">Username</a></div>
-                    <div>Role (Student or TA)</div>
+                    <div class="username"><a href=""><?php echo $username ?></a></div>
+                    <div><?php echo $role ?></div>
                     <img src="UMD.png" alt="Subscriber" width="130" height="130">
                 </div>
                 <div class="content">
-                    Just a random content of a random topic.
-                    <br>To see how it looks like.
-                    <br><br>
-                    Nothing more and nothing less.
-                    <br>
-                    Regards username
-                    <br>
+                    <?php echo $post_content ?>
                 </div>
             </div>
+            <!-- end loop -->
+          <?php } } ?>
         </div>
     <script src="main.js"></script>
 </body>
